@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <!--All color reference must be placed here-->
+
+    <!--theme color-->
     <color name="colorPrimary">#1565c0</color>
     <color name="colorPrimaryDark">#01579b</color>
     <color name="colorAccent">#42a5f5</color>
+
+    <!--custom color-->
+    <color name="colorWhite">#ffffff</color>
 </resources>

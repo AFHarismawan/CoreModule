@@ -1,4 +1,4 @@
-package com.harismawan.kotlinframework
+package com.harismawan.coremodule
 
 import android.support.test.InstrumentationRegistry
 import android.support.test.runner.AndroidJUnit4

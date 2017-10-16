@@ -1,6 +1,6 @@
-package com.harismawan.kotlinframework.data
+package com.harismawan.coremodule.data
 
-import com.harismawan.kotlinframework.config.Constant
+import com.harismawan.coremodule.config.Constant
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 
@@ -14,7 +14,6 @@ class RetrofitClient {
                 if (retrofit == null) {
                     retrofit = Retrofit.Builder()
                             .baseUrl(Constant.baseUrl)
-
                             .addConverterFactory(GsonConverterFactory.create())
                             .build()
                 }

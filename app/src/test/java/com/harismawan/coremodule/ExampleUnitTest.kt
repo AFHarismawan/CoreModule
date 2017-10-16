@@ -1,4 +1,4 @@
-package com.harismawan.kotlinframework
+package com.harismawan.coremodule
 
 import org.junit.Test
 

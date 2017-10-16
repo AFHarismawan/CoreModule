@@ -1,4 +1,4 @@
-package com.harismawan.kotlinframework.application
+package com.harismawan.coremodule.application
 
 import android.app.Application
 import android.content.Context

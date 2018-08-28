@@ -3,15 +3,14 @@ apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-android-extensions'
 
 android {
-    compileSdkVersion 26
-    buildToolsVersion "26.0.2"
+    compileSdkVersion 27
+    buildToolsVersion "27.0.3"
     defaultConfig {
         applicationId "com.harismawan.coremodule"
         minSdkVersion 19
-        targetSdkVersion 26
+        targetSdkVersion 27
         versionCode 1
         versionName "1.0"
-        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
         //get secured api_key stored on gradle.properties file
         buildConfigField "String", "apiKey", api_key
     }
@@ -24,17 +23,20 @@ android {
 }
 
 dependencies {
-    androidTestImplementation('com.android.support.test.espresso:espresso-core:3.0.1', {
-        exclude group: 'com.android.support', module: 'support-annotations'
-    })
-    testImplementation 'junit:junit:4.12'
-
-    implementation fileTree(dir: 'libs', include: ['*.jar'])
-    implementation "org.jetbrains.kotlin:kotlin-stdlib-jre7:$kotlin_version"
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    //support library
+    implementation 'com.android.support:appcompat-v7:27.1.1'
+    //rx android
     implementation 'io.reactivex.rxjava2:rxandroid:2.0.1'
-    implementation 'com.github.bumptech.glide:glide:4.2.0'
+    //glide
+    implementation 'com.github.bumptech.glide:glide:4.5.0'
+    //retrofit2
     implementation 'com.squareup.retrofit2:retrofit:2.3.0'
     implementation 'com.squareup.retrofit2:converter-gson:2.3.0'
-    implementation 'eu.davidea:flexible-adapter:5.0.0-rc2'
+    //flexible adapter
+    implementation 'eu.davidea:flexible-adapter:5.0.5'
     implementation 'eu.davidea:flexible-adapter-databinding:1.0.0-b1@aar'
+    //facebook shimmering
+    implementation 'com.facebook.shimmer:shimmer:0.3.0'
 }

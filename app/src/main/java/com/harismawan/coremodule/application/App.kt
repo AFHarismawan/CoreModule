@@ -8,10 +8,9 @@ class App : Application() {
 
     override fun onCreate() {
         super.onCreate()
+        //TODO implement Realm database
 
-        /*
-        change default fonts with fonts/montserrat_regular.ttf on assets folder
-        */
+        //change default fonts with fonts/montserrat_regular.ttf on assets folder
         overrideFont(applicationContext, "SERIF", "fonts/montserrat_regular.ttf")
     }
 

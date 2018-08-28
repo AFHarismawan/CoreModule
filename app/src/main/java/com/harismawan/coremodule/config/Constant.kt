@@ -7,7 +7,7 @@ class Constant {
     companion object {
 
         //backend server base url
-        val baseUrl = "<base_url>"
+        const val baseUrl = "<base_url>"
 
         //example secured apiKey stored on gradle.properties file
         val apiKey = BuildConfig.apiKey

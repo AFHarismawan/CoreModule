@@ -5,7 +5,7 @@ import android.net.ConnectivityManager
 import android.widget.ImageView
 import com.bumptech.glide.Glide
 
-class Util {
+class Utils {
 
     companion object {
 
